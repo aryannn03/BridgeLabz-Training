@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class average {
+public class Average {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n1=sc.nextInt();
