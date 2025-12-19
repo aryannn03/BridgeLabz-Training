@@ -1,4 +1,4 @@
-class Solution {
+public class CoinChange {
     public int coinChange(int[] coins, int amount) {
         Integer dp[]= new Integer [amount+1];
         int ans=minimum(coins, amount,0,dp);

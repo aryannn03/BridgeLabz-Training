@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Average {
+public class AverageOfNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n1=sc.nextInt();

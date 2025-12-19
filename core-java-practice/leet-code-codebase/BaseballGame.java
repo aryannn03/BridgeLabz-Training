@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+public class BaseballGame {
     public int calPoints(String[] operations) {
         Stack<String> st= new Stack<>();
         int ans=0;

@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+public class SetMismatch {
     public int[] findErrorNums(int[] nums) {
         Arrays.sort(nums);
         int arr[]= new int[2];

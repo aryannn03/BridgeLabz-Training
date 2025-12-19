@@ -1,4 +1,4 @@
-class Solution {
+public class MajorityElement {
     public int majorityElement(int[] nums) {
         int res=0;
         int count=1;
