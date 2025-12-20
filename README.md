@@ -3,12 +3,12 @@
 This repository contains all the tasks, practice programs, and problem-solving work completed as part of *BridgeLabz Training.*  
 The focus is on *Core Java fundamentals* and *DSA practice using LeetCode.*
 
-## BridgeLabz Training Folder Structure
+## 📁 BridgeLabz Training Folder Structure
 
+```
 BridgeLabz-Training
 │
 ├── core-java-practice
-│   │
 │   ├── gcr-codebase
 │   │   ├── programming-elements
 │   │   ├── control-flow
@@ -17,6 +17,7 @@ BridgeLabz-Training
 │   ├── scenario-based
 │   │
 │   └── leet-code-codebase
+```
 
 ## 📅 Daily Progress Overview
 
