@@ -141,3 +141,21 @@ Scenarios Covered:
 - - Implemented loop to continue until balance is exhausted or user quits
 
 📂 Folder:core-java-practice/scenario-based
+
+---
+
+### ✅ 24 December
+Completed Java Methods Lab Practices
+- Practiced designing and using methods to write modular and reusable code
+- Improved understanding of recursion, static methods, and built-in libraries
+
+Topics Covered:
+- User-defined methods
+- Reusing methods multiple times
+- Making methods more dynamic using parameters
+- Recursive methods
+- Java static methods
+- Java standard library methods
+- java.lang.Math class
+
+📂 Folder:core-java-practice/gcr-codebase/methods
