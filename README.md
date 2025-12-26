@@ -79,3 +79,65 @@ Completed Level 1, Level 2 & Level 3 Java Problems
 -Boolean data types and logical operators
 
 📂 Folder: core-java-practice/gcr-codebase/control-flow
+
+---
+
+### ✅ 20 December
+
+Practiced Java Array Concepts
+- Solved practice problems based on single and multi-dimensional arrays
+- Improved understanding of array creation, access, and modification
+
+Topics Covered:
+- Java Arrays
+- Creating and accessing arrays
+- Accessing arrays using for loop
+- Modifying array elements
+- Using the length property of arrays
+- Multi-dimensional arrays
+- 2D arrays (matrix representation)
+- Accessing elements and finding size of multi-dimensional arrays
+- Using System.err() messages and System.exit() method
+
+📂 Folder: core-java-practice/gcr-codebase/arrays
+
+---
+
+### ✅ 22 December
+Completed Java String Lab Practices
+- Practiced Java String-related problems and exception handling concepts
+- Enhanced understanding of string manipulation and error handling
+
+Topics Covered:
+- Java Strings and string creation
+- Use of escape sequence (\)
+- Taking string input from user
+- String arrays
+- Passing strings as method parameters
+- String class built-in methods
+- ASCII character codes
+- Java exceptions
+- Exception hierarchy
+- Exception types
+- java.lang.RuntimeException (unchecked exceptions)
+
+📂 Folder:core-java-practice/gcr-codebase/string
+
+---
+
+### ✅ 23 December
+Completed Scenario-Based Java Problems
+- Implemented real-life scenarios using Java control flow and loops
+- Strengthened logical thinking through conditional and iterative problem-solving
+
+Scenarios Covered:
+- Election Booth Manager
+- - Checked voter eligibility using age (if condition)
+- - Recorded votes for candidates
+- - Used loops to handle multiple voters with exit condition
+- Metro Smart Card Fare Deduction
+- - Calculated fare based on distance using ternary operator
+- - Deducted fare from smart card balance
+- - Implemented loop to continue until balance is exhausted or user quits
+
+📂 Folder:core-java-practice/scenario-based
