@@ -159,3 +159,52 @@ Topics Covered:
 - java.lang.Math class
 
 📂 Folder:core-java-practice/gcr-codebase/methods
+
+---
+
+### ✅ 26 December
+Completed Scenario-Based Java Tasks
+- Solved real-world scenario problems using loops and conditional logic
+- Improved understanding of decision-making and iterative control flow
+
+Scenarios Covered:
+- Bus Route Distance Tracker 
+  - Tracked total distance using a while loop
+  - Asked passenger confirmation at each stop
+  - Exited the loop based on user confirmation
+- Festival Lucky Draw
+  - Checked winning condition using modulus operator
+  - Applied if conditions for divisibility by 3 and 5
+  - Used loops for multiple visitors
+  - Used continue for handling invalid inputs
+  
+📂 Folder:core-java-practice/scenario-based
+
+---
+
+### ✅ 29 December
+Completed Employee Wage Computation Program
+- Implemented an employee wage computation system using Java
+- Applied conditional logic, loops, and methods to calculate wages
+
+Concepts Covered:
+- Employee attendance check
+- Daily and part-time wage calculation
+- Wage calculation using switch case
+- Monthly wage computation
+- Wage calculation based on total working hours and days
+  
+📂 Folder:core-java-practice/scenario-based
+
+---
+
+### ✅ 30 December
+Completed Line Comparison Problem
+- Implemented a Java program to compare two lines based on their lengths
+
+Concepts Covered:
+- Calculating line length using distance formula
+- Comparing line lengths using conditional logic
+- Understanding equality and comparison of values
+
+📂 Folder:core-java-practice/scenario-based
