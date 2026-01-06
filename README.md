@@ -227,7 +227,7 @@ BridgeLabz-Training
 - Difference between Procedural and OOP  
 - Class and Object concepts  
 
-📂 Folder: oops-practice/class-object
+📂 Folder: oops-practice/class and object
 
 ---
 
@@ -275,3 +275,50 @@ BridgeLabz-Training
 - Sequence Diagram  
 
 📂 Folder:oops-practice/gcr-codebase/object-modeling
+
+---
+
+### 3 January  
+*Completed Inheritance and Polymorphism Concepts*  
+- Studied different types of inheritance and their behavior in Java  
+- Understood method overriding and constructor inheritance  
+- Learned how inheritance supports polymorphism  
+
+*Concepts Covered:*  
+- Inheritance  
+- Single-level inheritance  
+- Multilevel inheritance  
+- Hierarchical inheritance  
+- Key features of inheritance  
+- Method overriding  
+- Constructor inheritance in Java  
+- Polymorphism and inheritance  
+- Access modifiers and inheritance  
+
+*Scenario-Based Problems:*  
+- Library Management System – Book Search and Checkout  
+- EduQuiz – Student Quiz Grader  
+
+📂 Folder:oops-practice/scenario-based<br>
+📂 Folder:oops-practice/gcr-codebase/inheritance
+
+---
+
+### 5 January
+*Completed Encapsulation, Polymorphism, Interface, and Abstract Class Concepts*  
+- Studied core OOP principles and their role in building modular Java applications  
+
+*Concepts Covered:*  
+- Encapsulation  
+- Polymorphism  
+- Interface  
+- Abstract classes  
+
+*Scenario-Based Problems:*  
+- Invoice Generator for Freelancers  
+- Cafeteria Menu App  
+
+📂 Folder:oops-practice/scenario-based<br>
+📂 Folder:oops-practice/gcr-codebase/encapsulation-polymorphism-interface-abstract
+
+---
