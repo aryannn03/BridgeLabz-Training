@@ -354,19 +354,6 @@ BridgeLabz-Training
 
 ---
 
-### 7 January   
-*Reviewed DSA Preparation Plan Roadmap*  
-- Understood the structured roadmap for Data Structures and Algorithms preparation  
-- Planned topic-wise learning and problem-solving strategy  
-
-*Focus Areas:*  
-- Data Structures fundamentals  
-- Algorithmic problem-solving  
-- Consistent practice using LeetCode  
-- Progressive difficulty-based preparation  
-
----
-
 ### 8 January   
 *Studied Data Structures Fundamentals and Linked Lists*  
 - Learned the basics of data structures and their importance in Java  
