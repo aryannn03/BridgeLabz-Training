@@ -403,3 +403,14 @@ BridgeLabz-Training
 📂 Folder:oops-practice/scenario-based
 
 ---
+
+## ✅ 13 January  
+*Completed Git-Based Calculator Repository Task*  
+- Created a Calculator Git repository with multiple branches  
+- Implemented addition, subtraction, and multiplication operations  
+
+*Git Concepts Demonstrated:*  
+- Branching and merging (`git merge`, `git rebase`)  
+- `git stash` and `git stash pop`  
+- `git pull` and `git fetch`  
+- Merge conflict creation and resolution
