@@ -319,7 +319,7 @@ BridgeLabz-Training
 - Cafeteria Menu App  
 
 📂 Folder:oops-practice/scenario-based<br>
-📂 Folder:oops-practice/gcr-codebase/encapsulation-polymorphism-interface-abstract
+📂 Folder:oops-practice/gcr-codebase/encapsulation_polymorphism_interface_abstract
 
 ---
 
@@ -381,6 +381,8 @@ BridgeLabz-Training
 - HashMap  
 - Hashing Function  
 
+📂 Folder:oops-practice/scenario-based
+
 ---
 
 ### 12 January  
@@ -400,7 +402,8 @@ BridgeLabz-Training
 - Online Voting System  
 - Digital Wallet System  
 
-📂 Folder:oops-practice/scenario-based
+📂 Folder:oops-practice/scenario-based<br>
+📂 Folder:dsa-practice/scenario-based
 
 ---
 
@@ -414,3 +417,15 @@ BridgeLabz-Training
 - `git stash` and `git stash pop`  
 - `git pull` and `git fetch`  
 - Merge conflict creation and resolution
+
+---
+
+### ✅ 14 January  
+*Studied and Implemented Sorting Algorithms in Java*  
+- Learned sorting concepts and implemented multiple algorithms  
+
+*Algorithms Covered:*  
+- Bubble Sort, Insertion Sort, Merge Sort, Quick Sort  
+- Selection Sort, Heap Sort, Counting Sort, Radix Sort, Bucket Sort  
+
+📂 Folder:dsa-practice/gcr-codebase/sorting
