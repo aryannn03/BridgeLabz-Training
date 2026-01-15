@@ -407,7 +407,7 @@ BridgeLabz-Training
 
 ---
 
-## ✅ 13 January  
+## 13 January  
 *Completed Git-Based Calculator Repository Task*  
 - Created a Calculator Git repository with multiple branches  
 - Implemented addition, subtraction, and multiplication operations  
@@ -420,7 +420,7 @@ BridgeLabz-Training
 
 ---
 
-### ✅ 14 January  
+### 14 January  
 *Studied and Implemented Sorting Algorithms in Java*  
 - Learned sorting concepts and implemented multiple algorithms  
 
