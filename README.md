@@ -484,7 +484,7 @@ BridgeLabz-Training
 
 ---
 
-### ✅ 15 January  
+### 15 January  
 *Studied String Handling, File I/O, and Searching Techniques*  
 - Learned efficient string manipulation and basic input handling  
 - Understood searching algorithms for data lookup  
