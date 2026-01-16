@@ -27,7 +27,59 @@ BridgeLabz-Training
 │   └── leet-code-codebase
 │
 └── reviews
+
 ```
+## Scenario-Based Questions Overview
+
+###  Core Java – Scenario-Based Problems
+- BMI Fitness Tracker  
+- Polling Booth / Election Booth Manager  
+- Coffee Counter  
+- Digital Watch Simulation  
+- Bus Route Distance Tracker  
+- Employee Wage Computation  
+- Push-up Fitness Tracker  
+- Library Fine Calculator  
+- Line Comparison Problem  
+- Lucky Draw  
+- Metro Smart Card Fare Deduction  
+- Movie Ticket Booking System  
+- Snake and Ladder Game  
+
+---
+
+### OOPs – Scenario-Based Problems
+- Bank Account Manager  
+- Online Banking System  
+- Cab Booking System  
+- Cafeteria Menu App  
+- Digital Wallet System  
+- E-Commerce Order Management System  
+- Student Quiz Grader (EduQuiz)  
+- Flight Booking System  
+- Invoice Generator for Freelancers  
+- Hospital Patient Management System  
+- Hotel Reservation System  
+- Inventory Management System  
+- Library Management System  
+- Mathematical Operations  
+- Online Examination System  
+- Phone Contact Organizer  
+- Online Quiz Result Processor  
+- Student Report Card Generator  
+- Student Score Analyzer  
+- String Analysis & Formatting  
+- Student Course Registration System  
+- Temperature Analyzer  
+- Vehicle Rental Application  
+- Online Voting System  
+
+---
+
+### DSA – Scenario-Based Problems
+- Traffic Manager – Roundabout Vehicle Flow
+
+---
 
 ## 📅 Daily Progress Overview
 
@@ -429,3 +481,18 @@ BridgeLabz-Training
 - Selection Sort, Heap Sort, Counting Sort, Radix Sort, Bucket Sort  
 
 📂 Folder:dsa-practice/gcr-codebase/sorting
+
+---
+
+### ✅ 15 January  
+*Studied String Handling, File I/O, and Searching Techniques*  
+- Learned efficient string manipulation and basic input handling  
+- Understood searching algorithms for data lookup  
+
+*Topics Covered:*  
+- `StringBuilder`  
+- `StringBuffer`  
+- `FileReader`  
+- `InputStreamReader`  
+- `Linear Search`  
+- `Binary Search`
