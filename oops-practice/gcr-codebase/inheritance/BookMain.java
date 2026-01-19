@@ -26,7 +26,7 @@ class Author extends Book {
     }
 }
 
-public class Main {
+public class BookMain {
     public static void main(String[] args){
         Author a=new Author("Java Basics",2023,"Naman","Java Trainer");
         a.displayInfo();

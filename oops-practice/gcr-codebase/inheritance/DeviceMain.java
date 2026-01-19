@@ -23,7 +23,7 @@ class Thermostat extends Device {
     }
 }
 
-public class Main {
+public class DeviceMain {
     public static void main(String[] args){
         Thermostat t=new Thermostat("TH101",true,24);
         t.displayStatus();

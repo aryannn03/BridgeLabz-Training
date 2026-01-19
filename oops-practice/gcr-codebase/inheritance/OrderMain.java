@@ -31,7 +31,7 @@ class DeliveredOrder extends ShippedOrder {
     }
 }
 
-public class Main {
+public class OrderMain {
     public static void main(String[] args){
         DeliveredOrder o=new DeliveredOrder("O101","01-Jan","TR123","05-Jan");
         System.out.println(o.getOrderStatus());

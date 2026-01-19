@@ -42,7 +42,7 @@ class Bird extends Animal {
     }
 }
 
-public class Main {
+public class AnimalMain {
     public static void main(String[] args){
         Animal[] a={
             new Dog("Tommy",3),

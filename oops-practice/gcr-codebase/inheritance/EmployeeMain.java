@@ -58,7 +58,7 @@ class Intern extends Employee {
     }
 }
 
-public class Main {
+public class EmployeeMain {
     public static void main(String[] args){
         Employee e1=new Manager("Naman",101,80000,5);
         Employee e2=new Developer("Amit",102,60000,"Java");
