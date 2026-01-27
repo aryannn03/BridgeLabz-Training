@@ -1,5 +1,7 @@
 package addressbook.model;
 
+import java.util.Objects;
+
 public class Contact{
     private String firstName;
     private String lastName;
@@ -92,6 +94,17 @@ public class Contact{
 
     public void setEmail(String email){
         this.email=email;
+    }
+    
+    public boolean equals(Object o){
+        if(this==o)return true;
+        if(o==null||getClass()!=o.getClass())return false;
+        Contact c=(Contact)o;
+        return firstName.equals(c.firstName)&&lastName.equals(c.lastName);
+    }
+
+    public int hashCode(){
+        return Objects.hash(firstName,lastName);
     }
 
     public String toString(){

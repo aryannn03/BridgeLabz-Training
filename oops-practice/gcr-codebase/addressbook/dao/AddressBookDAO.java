@@ -10,6 +10,10 @@ public class AddressBookDAO{
         books.putIfAbsent(name,new ArrayList<>());
     }
 
+    public boolean isDuplicate(String book,Contact c){
+        return books.get(book).contains(c);
+    }
+
     public void addContact(String book,Contact c){
         books.get(book).add(c);
     }
@@ -34,5 +38,56 @@ public class AddressBookDAO{
 
     public Set<String> getBookNames(){
         return books.keySet();
+    }
+
+    public List<Contact> searchByCityOrState(String value){
+        List<Contact> result=new ArrayList<>();
+        for(List<Contact> list:books.values()){
+            for(Contact c:list){
+                if(c.getCity().equals(value)||c.getState().equals(value))
+                    result.add(c);
+            }
+        }
+        return result;
+    }
+
+    public Map<String,List<Contact>> groupByCity(){
+        Map<String,List<Contact>> map=new HashMap<>();
+        for(List<Contact> list:books.values()){
+            for(Contact c:list){
+                map.computeIfAbsent(c.getCity(),k->new ArrayList<>()).add(c);
+            }
+        }
+        return map;
+    }
+
+    public Map<String,List<Contact>> groupByState(){
+        Map<String,List<Contact>> map=new HashMap<>();
+        for(List<Contact> list:books.values()){
+            for(Contact c:list){
+                map.computeIfAbsent(c.getState(),k->new ArrayList<>()).add(c);
+            }
+        }
+        return map;
+    }
+
+    public Map<String,Long> countByCity(){
+        Map<String,Long> map=new HashMap<>();
+        for(List<Contact> list:books.values()){
+            for(Contact c:list){
+                map.put(c.getCity(),map.getOrDefault(c.getCity(),0L)+1);
+            }
+        }
+        return map;
+    }
+
+    public Map<String,Long> countByState(){
+        Map<String,Long> map=new HashMap<>();
+        for(List<Contact> list:books.values()){
+            for(Contact c:list){
+                map.put(c.getState(),map.getOrDefault(c.getState(),0L)+1);
+            }
+        }
+        return map;
     }
 }

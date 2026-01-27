@@ -11,8 +11,10 @@ public class AddressBookService{
         dao.createBook(name);
     }
 
-    public void addContact(String book,Contact c){
+    public boolean addContact(String book,Contact c){
+        if(dao.isDuplicate(book,c))return false;
         dao.addContact(book,c);
+        return true;
     }
 
     public void editContact(String book,String firstName,Contact c){
@@ -29,5 +31,25 @@ public class AddressBookService{
 
     public Set<String> getBooks(){
         return dao.getBookNames();
+    }
+
+    public List<Contact> searchPerson(String value){
+        return dao.searchByCityOrState(value);
+    }
+
+    public Map<String,List<Contact>> viewByCity(){
+        return dao.groupByCity();
+    }
+
+    public Map<String,List<Contact>> viewByState(){
+        return dao.groupByState();
+    }
+
+    public Map<String,Long> countByCity(){
+        return dao.countByCity();
+    }
+
+    public Map<String,Long> countByState(){
+        return dao.countByState();
     }
 }

@@ -18,24 +18,29 @@ public class AddressBookMain{
             System.out.println("4.Show Contacts");
             System.out.println("5.New Address Book");
             System.out.println("6.Switch Address Book");
+            System.out.println("7.Search by City/State");
+            System.out.println("8.View by City");
+            System.out.println("9.View by State");
+            System.out.println("10.Count by City");
+            System.out.println("11.Count by State");
             System.out.println("0.Exit");
+
             int choice=sc.nextInt();
             sc.nextLine();
 
             if(choice==0)break;
 
             if(choice==1){
-                service.addContact(currentBook,inputContact(sc));
+                if(!service.addContact(currentBook,inputContact(sc)))
+                    System.out.println("Duplicate Entry");
             }
 
             if(choice==2){
-                System.out.print("First Name:");
                 String fn=sc.nextLine();
                 service.editContact(currentBook,fn,inputContact(sc));
             }
 
             if(choice==3){
-                System.out.print("First Name:");
                 service.deleteContact(currentBook,sc.nextLine());
             }
 
@@ -45,13 +50,33 @@ public class AddressBookMain{
             }
 
             if(choice==5){
-                System.out.print("Book Name:");
                 service.createAddressBook(sc.nextLine());
             }
 
             if(choice==6){
                 System.out.println(service.getBooks());
                 currentBook=sc.nextLine();
+            }
+
+            if(choice==7){
+                for(Contact c:service.searchPerson(sc.nextLine()))
+                    System.out.println(c);
+            }
+
+            if(choice==8){
+                System.out.println(service.viewByCity());
+            }
+
+            if(choice==9){
+                System.out.println(service.viewByState());
+            }
+
+            if(choice==10){
+                System.out.println(service.countByCity());
+            }
+
+            if(choice==11){
+                System.out.println(service.countByState());
             }
         }
     }
