@@ -553,3 +553,67 @@ BridgeLabz-Training
 - CinemaTime – Movie Schedule Manager  
 
 📂 Folder:dsa-practice/scenario-based
+
+---
+
+### 21 January  
+*Studied Java Generics Best Practices and Scenario-Based Applications*  
+- Learned how to use generics for type safety, reusability, and flexible design  
+
+*Topics Covered:*  
+- Generic classes and methods  
+- Bounded type parameters  
+- Wildcards (`? extends`, `? super`)  
+- Type safety and type erasure considerations
+
+📂 Folder:collections-practice/gcr-codebase/generics
+
+---
+
+### 22 January  
+*Studied Java Exception Handling Concepts*  
+- Learned how to handle runtime and compile-time errors using built-in and custom exceptions  
+
+*Topics Covered:*  
+- Types of exceptions (checked and unchecked)  
+- `try-catch` and `try-catch-finally` blocks  
+- `try-with-resources` statement  
+- `throw` and `throws`  
+- Creating custom exceptions  
+- Extending `Exception` class  
+- Defining constructors for exceptions  
+
+📂 Folder:collections-practice/gcr-codebase/exceptions
+
+---
+
+### 23 January  
+*Studied Java I/O Streams and Best Practices*  
+- Learned different types of streams and their usage for efficient input/output operations  
+
+*Topics Covered:*  
+- Java I/O Streams  
+- File Streams  
+- Object Streams  
+- ByteArray Streams  
+- Buffered Streams  
+- Reader and Writer  
+- Key considerations and best practices
+  
+📂 Folder:collections-practice/gcr-codebase/streams
+
+---
+
+### 27 January  
+*Studied Java Regex and JUnit Testing Concepts*  
+- Learned pattern matching using regular expressions and basics of unit testing in Java  
+
+*Topics Covered:*  
+- Regex basics (metacharacters and quantifiers)  
+- Common patterns (email, password, phone number)  
+- Java Regex API (`Pattern`, `Matcher`)  
+- `find()`, `matches()`, `replaceAll()` methods  
+- Introduction to JUnit framework  
+- JUnit annotations  
+- Writing test cases and assertions  
+- Test class structure
