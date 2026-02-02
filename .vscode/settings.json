@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "collections-practice\\gcr-codebase\\CSV_Data_Handling",
+        "collections-practice\\gcr-codebase\\junit\\main",
+        "collections-practice\\gcr-codebase\\junit\\test"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\Dell\\Downloads\\json-20251224.jar",
+        "c:\\Users\\Dell\\Downloads\\junit-platform-console-standalone-1.10.0.jar"
+    ]
+}
