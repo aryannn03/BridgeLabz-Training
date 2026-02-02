@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "io-programming-practice/gcr-codebase/CSV_Data_Handling",
+        "io-programming-practice/gcr-codebase/csv-data-handling"
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\Dell\\Downloads\\json-20251224.jar"
+    ]
+}
