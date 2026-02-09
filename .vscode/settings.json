@@ -2,7 +2,9 @@
     "java.project.sourcePaths": [
         "collections-practice\\gcr-codebase\\junit\\main",
         "collections-practice\\gcr-codebase\\junit\\test",
-        "collections-practice\\gcr-codebase\\junit"
+        "collections-practice\\gcr-codebase\\junit",
+        "collections-practice\\scenario-based\\Junit-Test-Case\\main",
+        "collections-practice\\scenario-based\\Junit-Test-Case\\test"
     ],
     "java.project.referencedLibraries": [
         "c:\\Users\\Dell\\Downloads\\junit-platform-console-standalone-1.10.0.jar"
