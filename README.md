@@ -680,3 +680,93 @@ BridgeLabz-Training
 
 📂 Folder:io-programming-practice/gcr-codebase/csv-data-handling
 📂 Folder:collections-practice/gcr-codebase/annotations-reflection
+
+---
+
+### 3 February  
+*Studied JSON Handling and Java Stream Operations*  
+- Learned how to work with JSON data and process collections using Java Streams  
+
+*Topics Covered:*  
+- Introduction to JSON (reading, writing, parsing, schema validation)  
+- Stream intermediate operations (`filter`, `map`, `flatMap`, `distinct`, `sorted`, `peek`, `limit`, `skip`)  
+- Terminal operations (`collect`, `forEach`, `reduce`, `count`, `anyMatch`, `allMatch`, `noneMatch`)  
+- Stateless vs stateful operations  
+- Ordered vs unordered streams  
+- Parallel streams  
+- `forEach()` in Iterable vs Stream  
+
+📂 Folder:io-programming-practice/gcr-codebase/json
+📂 Folder:collections-practice/gcr-codebase/streams
+
+---
+
+### 4 February  
+*Developed StreamBuzz Creator Engagement Console Application*  
+- Built a console-based system to register creators, track weekly likes, and analyze engagement statistics  
+
+*Features Implemented:*  
+- Creator registration with weekly like tracking  
+- Threshold-based top post count calculation  
+- Overall average weekly likes computation  
+- Menu-driven interaction for engagement analysis  
+
+📂 Folder:collections-practice/scenario-based/StreamBuzz.java
+
+---
+
+### 5 February  
+*Developed Factory Robot Hazard Analyzer System*  
+- Built an application to evaluate robot hazard risk using validated inputs and custom exception handling  
+
+*Concepts Covered:*  
+- Input validation and custom exception (`RobotSafetyException`)  
+- Risk score calculation based on precision, worker density, and machinery state  
+- Exception handling using `try-catch`  
+- Case-sensitive state validation and formula-based computation  
+
+📂 Folder:dsa-practice/scenario-based/FactoryRobot.java
+
+---
+
+### 6 February  
+*Studied Java Collectors and Stream Data Aggregation*  
+- Learned how Collectors work with `Stream.collect()` to transform, group, and summarize data  
+
+*Topics Covered:*  
+- Roles of Collectors (transforming, aggregating, grouping, partitioning)  
+- Converting streams to collections (`toList`, `toSet`, `toMap`)  
+- Joining strings using `joining()`  
+- Grouping and partitioning data (`groupingBy`, `partitioningBy`)  
+- Generating statistics using `summarizingInt()`  
+
+---
+
+### 7 February
+*OceanFleet Collection Scenario & Java Multithreading Concepts*
+- Implemented a collection-based OceanFleet vessel performance management scenario and studied Java multithreading fundamentals with practical examples.
+
+*Topics Covered:*
+- Collection-based data storage, retrieval, and vessel performance processing
+- Creating threads using Thread class and Runnable interface
+- Thread lifecycle, states, and thread operations/methods
+- Comparison of Thread class vs Runnable interface
+- Practice problems on multithreading implementation
+  
+📂 Folder:multi-threading-practice/gcr-codebase/multi-threading
+📂 Folder:collections-practice/scenario-based/OceanFleet
+
+---
+
+### 9 February
+*Health Clinic JDBC Application & SonarQube Integration*
+- Developed a console-based Health Clinic Management system using JDBC (MySQL) and integrated the project with SonarQube for code quality analysis.
+
+*Topics Covered:*
+- Patient registration, doctor management, appointment scheduling, visit history, and billing modules
+- Data persistence using JDBC with MySQL database
+- SonarQube integration for static code analysis and quality reporting
+- Project execution screenshots and analysis report generation
+
+📂 Folder:collections-practice/gcr-codebase/sonarqube
+📂 Folder:jdbc-dbms-practice/gcr-codebase/health-clinic-app
