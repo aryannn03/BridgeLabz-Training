@@ -1,31 +1,46 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import model.Doctor;
-import java.util.*;
+import util.DBConnection;
 
 public class DoctorDAO{
-    private List<Doctor> doctors=new ArrayList<>();
-    private int idCounter=1;
 
-    public Doctor add(String name,String spec,double fee){
-        Doctor d=new Doctor(idCounter++,name,spec,fee);
-        doctors.add(d);
-        return d;
-    }
+    public void addDoctor(Doctor doctor){
+        String sql="INSERT INTO doctors(name,specialization,contact,fee)VALUES(?,?,?,?)";
 
-    public List<Doctor> bySpecialty(String spec){
-        List<Doctor> res=new ArrayList<>();
-        for(Doctor d:doctors){
-            if(d.getSpecialty().equals(spec)&&d.isActive())
-                res.add(d);
+        try(Connection con=DBConnection.getConnection();
+            PreparedStatement ps=con.prepareStatement(sql)){
+
+            ps.setString(1,doctor.getName());
+            ps.setString(2,doctor.getSpecialization());
+            ps.setString(3,doctor.getContact());
+            ps.setDouble(4,doctor.getFee());
+
+            ps.executeUpdate();
+            System.out.println("Doctor added successfully");
+
+        }catch(Exception e){
+            System.out.println(e.getMessage());
         }
-        return res;
     }
 
-    public void deactivate(int id){
-        for(Doctor d:doctors){
-            if(d.getId()==id)
-                d.deactivate();
+    public void viewDoctors(){
+        String sql="SELECT * FROM doctors";
+
+        try(Connection con=DBConnection.getConnection();
+            PreparedStatement ps=con.prepareStatement(sql);
+            ResultSet rs=ps.executeQuery()){
+
+            System.out.println("\nAvailable Doctors:");
+            while(rs.next()){
+                System.out.println(rs.getInt("doctor_id")+" - "+rs.getString("name")+" - "+rs.getString("specialization"));
+            }
+
+        }catch(Exception e){
+            System.out.println(e.getMessage());
         }
     }
 }

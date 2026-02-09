@@ -1,22 +1,25 @@
 package model;
 
 public class Doctor{
+
     private int id;
     private String name;
-    private String specialty;
+    private String specialization;
+    private String contact;
     private double fee;
-    private boolean active=true;
 
-    public Doctor(int id,String name,String specialty,double fee){
-        this.id=id;
+    public Doctor(String name,String specialization,String contact,double fee){
         this.name=name;
-        this.specialty=specialty;
+        this.specialization=specialization;
+        this.contact=contact;
         this.fee=fee;
     }
 
     public int getId(){return id;}
-    public String getSpecialty(){return specialty;}
+    public void setId(int id){this.id=id;}
+
+    public String getName(){return name;}
+    public String getSpecialization(){return specialization;}
+    public String getContact(){return contact;}
     public double getFee(){return fee;}
-    public boolean isActive(){return active;}
-    public void deactivate(){active=false;}
 }

@@ -1,15 +1,55 @@
 package dao;
 
+import util.DBConnection;
 import model.Visit;
-import java.util.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class VisitDAO{
-    private List<Visit> visits=new ArrayList<>();
-    private int idCounter=1;
 
-    public Visit add(int apptId,String diag,String notes){
-        Visit v=new Visit(idCounter++,apptId,diag,notes);
-        visits.add(v);
-        return v;
+    public int recordVisitAndCompleteAppointment(Visit visit){
+        int visitId=0;
+        String sql="INSERT INTO visits(appointment_id,diagnosis,notes,visit_date)VALUES(?,?,?,?)";
+
+        try(Connection con=DBConnection.getConnection();
+            PreparedStatement ps=con.prepareStatement(sql,PreparedStatement.RETURN_GENERATED_KEYS)){
+
+            ps.setInt(1,visit.getAppointmentId());
+            ps.setString(2,visit.getDiagnosis());
+            ps.setString(3,visit.getNotes());
+            ps.setString(4,visit.getVisitDate());
+
+            ps.executeUpdate();
+
+            ResultSet rs=ps.getGeneratedKeys();
+            if(rs.next()){
+                visitId=rs.getInt(1);
+            }
+
+            System.out.println("Visit recorded successfully");
+
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        return visitId;
+    }
+
+    public void viewVisits(){
+        String sql="SELECT * FROM visits";
+
+        try(Connection con=DBConnection.getConnection();
+            PreparedStatement ps=con.prepareStatement(sql);
+            ResultSet rs=ps.executeQuery()){
+
+            System.out.println("\nVisits:");
+            while(rs.next()){
+                System.out.println(rs.getInt("visit_id")+" - Appointment:"+rs.getInt("appointment_id")+" Date:"+rs.getString("visit_date"));
+            }
+
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }

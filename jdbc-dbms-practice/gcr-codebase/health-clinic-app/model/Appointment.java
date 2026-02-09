@@ -1,23 +1,21 @@
 package model;
 
 public class Appointment{
-    private int id;
+
     private int patientId;
     private int doctorId;
     private String date;
-    private String status;
+    private String time;
 
-    public Appointment(int id,int patientId,int doctorId,String date){
-        this.id=id;
+    public Appointment(int patientId,int doctorId,String date,String time){
         this.patientId=patientId;
         this.doctorId=doctorId;
         this.date=date;
-        this.status="SCHEDULED";
+        this.time=time;
     }
 
-    public int getId(){return id;}
+    public int getPatientId(){return patientId;}
     public int getDoctorId(){return doctorId;}
     public String getDate(){return date;}
-    public void cancel(){status="CANCELLED";}
-    public void complete(){status="COMPLETED";}
+    public String getTime(){return time;}
 }
