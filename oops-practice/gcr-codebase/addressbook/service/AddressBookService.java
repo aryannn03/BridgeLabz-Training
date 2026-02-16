@@ -1,55 +1,52 @@
-package addressbook.service;
+package service;
+import dao.AddressBookDAO;
+import java.util.List;
+import java.util.Set;
+import model.Contact;
 
-import addressbook.dao.AddressBookDAO;
-import addressbook.model.Contact;
-import java.util.*;
-
-public class AddressBookService{
+// Business Logic Layer
+public class AddressBookService {
     private AddressBookDAO dao=new AddressBookDAO();
 
+    // Use Case 6
     public void createAddressBook(String name){
-        dao.createBook(name);
+        dao.addAddressBook(name);
     }
 
-    public boolean addContact(String book,Contact c){
-        if(dao.isDuplicate(book,c))return false;
-        dao.addContact(book,c);
-        return true;
+    // Use Case 2,5,7
+    public boolean addContact(String bookName,Contact contact){
+        return dao.addContact(bookName,contact);
     }
 
-    public void editContact(String book,String firstName,Contact c){
-        dao.updateContact(book,firstName,c);
+    // Use Case 3
+    public boolean editContact(String bookName,String firstName,Contact updatedContact){
+        return dao.editContact(bookName,firstName,updatedContact);
     }
 
-    public void deleteContact(String book,String firstName){
-        dao.deleteContact(book,firstName);
+    // Use Case 4
+    public boolean deleteContact(String bookName,String firstName){
+        return dao.deleteContact(bookName,firstName);
     }
 
-    public List<Contact> getContacts(String book){
-        return dao.getContacts(book);
+    // Use Case 8
+    public List<Contact> searchByCity(String city){
+        return dao.searchByCity(city);
     }
 
-    public Set<String> getBooks(){
-        return dao.getBookNames();
+    public List<Contact> searchByState(String state){
+        return dao.searchByState(state);
     }
 
-    public List<Contact> searchPerson(String value){
-        return dao.searchByCityOrState(value);
+    // Use Case 10
+    public int countByCity(String city){
+        return dao.countByCity(city);
     }
 
-    public Map<String,List<Contact>> viewByCity(){
-        return dao.groupByCity();
+    public int countByState(String state){
+        return dao.countByState(state);
     }
 
-    public Map<String,List<Contact>> viewByState(){
-        return dao.groupByState();
-    }
-
-    public Map<String,Long> countByCity(){
-        return dao.countByCity();
-    }
-
-    public Map<String,Long> countByState(){
-        return dao.countByState();
+    public Set<String> getAllBooks(){
+        return dao.getAllBooks();
     }
 }

@@ -1,93 +1,119 @@
-package addressbook.dao;
+package dao;
 
-import addressbook.model.Contact;
 import java.util.*;
+import model.Contact;
 
-public class AddressBookDAO{
-    private Map<String,List<Contact>> books=new HashMap<>();
+// Use Case 5,6,7,8,9,10: Data Storage Layer
+public class AddressBookDAO {
 
-    public void createBook(String name){
-        books.putIfAbsent(name,new ArrayList<>());
+    // Use Case 6: Multiple Address Books
+    private Map<String,List<Contact>> addressBooks=new HashMap<>();
+
+    // Use Case 9: City and State Dictionary
+    private Map<String,List<Contact>> cityMap=new HashMap<>();
+    private Map<String,List<Contact>> stateMap=new HashMap<>();
+
+    // Use Case 6: Create Address Book
+    public void addAddressBook(String name){
+        addressBooks.putIfAbsent(name,new ArrayList<>());
     }
 
-    public boolean isDuplicate(String book,Contact c){
-        return books.get(book).contains(c);
+    // Use Case 2,5,7: Add Contact with Duplicate Check
+    public boolean addContact(String bookName,Contact contact){
+        List<Contact> contacts=addressBooks.get(bookName);
+        if(contacts==null){
+            return false;
+        }
+        if(contacts.contains(contact)){
+            return false;
+        }
+        contacts.add(contact);
+
+        cityMap.computeIfAbsent(contact.getCity(),k->new ArrayList<>()).add(contact);
+        stateMap.computeIfAbsent(contact.getState(),k->new ArrayList<>()).add(contact);
+        return true;
     }
 
-    public void addContact(String book,Contact c){
-        books.get(book).add(c);
-    }
+    // Use Case 3: Edit Contact
+    public boolean editContact(String bookName,String firstName,Contact updatedContact){
+        List<Contact> contacts=addressBooks.get(bookName);
+        if(contacts==null)return false;
 
-    public List<Contact> getContacts(String book){
-        return books.get(book);
-    }
-
-    public void deleteContact(String book,String firstName){
-        books.get(book).removeIf(c->c.getFirstName().equals(firstName));
-    }
-
-    public void updateContact(String book,String firstName,Contact c){
-        List<Contact> list=books.get(book);
-        for(int i=0;i<list.size();i++){
-            if(list.get(i).getFirstName().equals(firstName)){
-                list.set(i,c);
-                break;
+        for(int i=0;i<contacts.size();i++){
+            if(contacts.get(i).getFirstName().equalsIgnoreCase(firstName)){
+                contacts.set(i,updatedContact);
+                return true;
             }
         }
+        return false;
     }
 
-    public Set<String> getBookNames(){
-        return books.keySet();
-    }
+    // Use Case 4: Delete Contact
+    public boolean deleteContact(String bookName,String firstName){
+        List<Contact> contacts=addressBooks.get(bookName);
+        if(contacts==null)return false;
 
-    public List<Contact> searchByCityOrState(String value){
-        List<Contact> result=new ArrayList<>();
-        for(List<Contact> list:books.values()){
-            for(Contact c:list){
-                if(c.getCity().equals(value)||c.getState().equals(value))
-                    result.add(c);
+        Iterator<Contact> iterator=contacts.iterator();
+        while(iterator.hasNext()){
+            Contact contact=iterator.next();
+            if(contact.getFirstName().equalsIgnoreCase(firstName)){
+                iterator.remove();
+                return true;
             }
         }
-        return result;
+        return false;
     }
 
-    public Map<String,List<Contact>> groupByCity(){
-        Map<String,List<Contact>> map=new HashMap<>();
-        for(List<Contact> list:books.values()){
-            for(Contact c:list){
-                map.computeIfAbsent(c.getCity(),k->new ArrayList<>()).add(c);
-            }
-        }
-        return map;
+    // Use Case 8: Search by City
+    public List<Contact> searchByCity(String city){
+        return cityMap.getOrDefault(city,new ArrayList<>());
     }
 
-    public Map<String,List<Contact>> groupByState(){
-        Map<String,List<Contact>> map=new HashMap<>();
-        for(List<Contact> list:books.values()){
-            for(Contact c:list){
-                map.computeIfAbsent(c.getState(),k->new ArrayList<>()).add(c);
-            }
-        }
-        return map;
+    // Use Case 8: Search by State
+    public List<Contact> searchByState(String state){
+        return stateMap.getOrDefault(state,new ArrayList<>());
     }
 
-    public Map<String,Long> countByCity(){
-        Map<String,Long> map=new HashMap<>();
-        for(List<Contact> list:books.values()){
-            for(Contact c:list){
-                map.put(c.getCity(),map.getOrDefault(c.getCity(),0L)+1);
-            }
-        }
-        return map;
+    // Use Case 10: Count by City
+    public int countByCity(String city){
+        return cityMap.getOrDefault(city,new ArrayList<>()).size();
     }
 
-    public Map<String,Long> countByState(){
-        Map<String,Long> map=new HashMap<>();
-        for(List<Contact> list:books.values()){
-            for(Contact c:list){
-                map.put(c.getState(),map.getOrDefault(c.getState(),0L)+1);
-            }
-        }
-        return map;
+    // Use Case 10: Count by State
+    public int countByState(String state){
+        return stateMap.getOrDefault(state,new ArrayList<>()).size();
     }
+
+    // Extra Utility
+    public Set<String> getAllBooks(){
+        return addressBooks.keySet();
+    }
+
+    // UC11: Sort by Name
+    public List<Contact> sortByName(String bookName){
+        List<Contact> list=new ArrayList<>(addressBooks.get(bookName));
+        Collections.sort(list,(a,b)->a.getFirstName().compareToIgnoreCase(b.getFirstName()));
+        return list;
+    }
+
+    // UC12: Sort by City
+    public List<Contact> sortByCity(String bookName){
+        List<Contact> list=new ArrayList<>(addressBooks.get(bookName));
+        Collections.sort(list,(a,b)->a.getCity().compareToIgnoreCase(b.getCity()));
+        return list;
+    }
+
+    // UC12: Sort by State
+    public List<Contact> sortByState(String bookName){
+        List<Contact> list=new ArrayList<>(addressBooks.get(bookName));
+        Collections.sort(list,(a,b)->a.getState().compareToIgnoreCase(b.getState()));
+        return list;
+    }
+
+    // UC12: Sort by Zip
+    public List<Contact> sortByZip(String bookName){
+        List<Contact> list=new ArrayList<>(addressBooks.get(bookName));
+        Collections.sort(list,(a,b)->a.getZip().compareToIgnoreCase(b.getZip()));
+        return list;
+    }   
 }

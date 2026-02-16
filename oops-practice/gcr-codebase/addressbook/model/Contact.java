@@ -1,8 +1,7 @@
-package addressbook.model;
-
+package model;
 import java.util.Objects;
-
-public class Contact{
+// Use Case 1: Contact Entity
+public class Contact {
     private String firstName;
     private String lastName;
     private String address;
@@ -11,17 +10,7 @@ public class Contact{
     private String zip;
     private String phone;
     private String email;
-
-    public Contact(
-        String firstName,
-        String lastName,
-        String address,
-        String city,
-        String state,
-        String zip,
-        String phone,
-        String email
-    ){
+    public Contact(String firstName,String lastName,String address,String city,String state,String zip,String phone,String email){
         this.firstName=firstName;
         this.lastName=lastName;
         this.address=address;
@@ -36,78 +25,63 @@ public class Contact{
         return firstName;
     }
 
-    public void setFirstName(String firstName){
-        this.firstName=firstName;
-    }
-
     public String getLastName(){
         return lastName;
-    }
-
-    public void setLastName(String lastName){
-        this.lastName=lastName;
-    }
-
-    public String getAddress(){
-        return address;
-    }
-
-    public void setAddress(String address){
-        this.address=address;
-    }
-
-    public String getCity(){
-        return city;
-    }
-
-    public void setCity(String city){
-        this.city=city;
-    }
-
-    public String getState(){
-        return state;
-    }
-
-    public void setState(String state){
-        this.state=state;
     }
 
     public String getZip(){
         return zip;
     }
 
-    public void setZip(String zip){
-        this.zip=zip;
+    public String getCity(){
+        return city;
     }
 
-    public String getPhone(){
-        return phone;
+    public String getState(){
+        return state;
+    }
+
+
+    public void setAddress(String address){
+        this.address=address;
+    }
+
+    public void setCity(String city){
+        this.city=city;
+    }
+
+    public void setState(String state){
+        this.state=state;
+    }
+
+    public void setZip(String zip){
+        this.zip=zip;
     }
 
     public void setPhone(String phone){
         this.phone=phone;
     }
 
-    public String getEmail(){
-        return email;
-    }
-
     public void setEmail(String email){
         this.email=email;
     }
-    
-    public boolean equals(Object o){
-        if(this==o)return true;
-        if(o==null||getClass()!=o.getClass())return false;
-        Contact c=(Contact)o;
-        return firstName.equals(c.firstName)&&lastName.equals(c.lastName);
+
+    // Use Case 7: Duplicate Check using Name
+    @Override
+    public boolean equals(Object obj){
+        if(this==obj)return true;
+        if(obj==null||getClass()!=obj.getClass())return false;
+        Contact contact=(Contact)obj;
+        return firstName.equalsIgnoreCase(contact.firstName)&&lastName.equalsIgnoreCase(contact.lastName);
     }
 
+    @Override
     public int hashCode(){
-        return Objects.hash(firstName,lastName);
+        return Objects.hash(firstName.toLowerCase(),lastName.toLowerCase());
     }
 
+    @Override
     public String toString(){
-        return firstName+" "+lastName+" "+address+" "+city+" "+state+" "+zip+" "+phone+" "+email;
+        return "Name:"+firstName+" "+lastName+", Address:"+address+", City:"+city+", State:"+state+", Zip:"+zip+", Phone:"+phone+", Email:"+email;
     }
 }
