@@ -770,3 +770,100 @@ BridgeLabz-Training
 
 📂 Folder:collections-practice/gcr-codebase/sonarqube
 📂 Folder:jdbc-dbms-practice/gcr-codebase/health-clinic-app
+
+---
+
+### 10 February
+*Participated in M1 Mock Examination*
+- Attempted the mock examination to evaluate preparation level and identify areas for improvement before the final M1 exam.
+
+*Topics Covered:*
+- Practice of exam-oriented problem solving
+- Time management during mock test
+- Review of key technical and conceptual topics
+- Identification of weak areas for further preparation
+
+---
+
+### 11 February
+*Revision for M1 Examination Preparation*
+- Revised core technical concepts and practiced important problems to strengthen exam readiness.
+
+*Topics Covered:*
+- Review of key Java and programming fundamentals
+- Practice of important coding and conceptual questions
+- Concept reinforcement through quick notes and examples
+- Focus on improving accuracy and speed for the exam
+
+---
+
+### 12 February
+*Parking Slot Allocation & Courier Shift Scheduler Systems*
+- Designed collection-based OOP applications to manage smart parking allocation and courier staff shift scheduling with proper exception handling.
+
+*Topics Covered:*
+- Smart parking slot allocation using Map, Queue, and OOP classes (Vehicle, Car, Bike, ParkingSlot)
+- Handling waiting vehicles and nearest slot assignment logic
+- Courier staff shift scheduling using List and Map with duplicate assignment prevention
+- Custom exception handling (`NoParkingSlotAvailableException`, `ShiftAlreadyAssignedException`)
+
+📂 Folder: collections-practice/scenario-based
+
+---
+
+### 13 February
+*Online Course Enrollment Manager – Java 8 Mini Project*
+- Developed a Java 8 based enrollment management system implementing functional programming concepts using Streams, Lambda Expressions, and Collectors.
+
+*Topics Covered:*
+- Managing enrollment records (student, course, category, enrollment date)
+- Filtering enrollments by course and category using Streams
+- Grouping enrollments by course name and counting enrollments per category
+- Sorting enrollments by date using Comparator
+- Usage of Lambda expressions, Method references, and Collectors (`groupingBy`, `counting`) 
+
+📂 Folder: java8-programming-practice/gcr-codebase/mini-project
+
+---
+
+### 14 February
+*Disaster Relief Allocation & Smart Water Tank Monitoring Systems*
+- Designed collection-based OOP applications to manage disaster relief resource allocation and smart water tank level monitoring with exception handling.
+
+*Topics Covered:*
+- Resource allocation using Map, Queue, FIFO logic, and allocation reporting
+- Handling insufficient stock using `InsufficientResourceException`
+- Water tank monitoring using List, level percentage calculation, and threshold alerts
+- Sorting tanks by lowest water level using Comparator
+- Exception handling for invalid water levels (`InvalidWaterLevelException`)
+
+📂 Folder: collections-practice/scenario-based
+
+### 16 February
+*Employee Wage & Address Book problem using Four-Tier Architecture*
+- Implemented Employee Wage computation and Address Book applications using four-tier architecture with validation, testing, and structured layering.
+
+*Topics Covered:*
+- Four-tier architecture implementation (Presentation, Service, DAO, Repository/Model)
+- Employee Wage functionality development and enhancements
+- Address Book management with CRUD operations and Regex-based validations
+- JUnit testing for application modules and functionality verification
+- Clean modular code organization with layered design principles
+
+📂 Folder: java8-programming-practice/scenario-based/employee-wage-computation
+📂 Folder: oops-practice/gcr-codebase/addressbook
+
+---
+
+### 17 February
+*QuantityMeasurementApp Setup & Introduction*
+- Initialized project repository and prepared development workflow along with understanding the basics of the Quantity Measurement application.
+
+*Topics Covered:*
+- Repository creation: `QuantityMeasurementApp`
+- Branch setup with `main` and empty `dev` branches
+- Feature branch workflow from `dev`
+- Introduction to Quantity Measurement App structure and objectives
+- Project environment and prerequisite setup
+
+---
