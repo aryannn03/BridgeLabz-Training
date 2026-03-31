@@ -1,5 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "java8-programming-practice\\scenario-based\\employee-wage-computation"
+    ],
+    "java.project.referencedLibraries": []
         "io-programming-practice\\gcr-codebase\\csv-data-handling",
         "io-programming-practice\\gcr-codebase\\json-data"
     ],
