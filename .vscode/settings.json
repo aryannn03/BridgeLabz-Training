@@ -3,31 +3,4 @@
         "java8-programming-practice\\scenario-based\\employee-wage-computation"
     ],
     "java.project.referencedLibraries": []
-        "io-programming-practice\\gcr-codebase\\csv-data-handling",
-        "io-programming-practice\\gcr-codebase\\json-data"
-    ],
-    "java.project.referencedLibraries": [
-        "c:\\Users\\Dell\\Downloads\\jackson-dataformat-csv-2.15.4.jar",
-        "c:\\Users\\Dell\\Downloads\\jsr305-3.0.2.jar",
-        "c:\\Users\\Dell\\Downloads\\json-schema-validator-2.2.14.jar",
-        "c:\\Users\\Dell\\Downloads\\woodstox-core-6.4.0.jar",
-        "c:\\Users\\Dell\\Downloads\\jackson-databind-2.15.0.jar",
-        "c:\\Users\\Dell\\Downloads\\jackson-coreutils-1.0.jar",
-        "c:\\Users\\Dell\\Downloads\\jackson-core-2.15.0.jar",
-        "c:\\Users\\Dell\\Downloads\\jackson-annotations-2.15.0.jar",
-        "c:\\Users\\Dell\\Downloads\\jackson-dataformat-xml-2.15.4.jar",
-        "c:\\Users\\Dell\\Downloads\\json-20251224.jar",
-        "c:\\Users\\Dell\\Downloads\\msg-simple-1.1.jar",
-        "c:\\Users\\Dell\\Downloads\\guava-31.1-jre.jar",
-        "c:\\Users\\Dell\\Downloads\\json-schema-core-1.2.8.jar",
-        "c:\\Users\\Dell\\Downloads\\reflections-0.9.10.jar"
-        "collections-practice\\gcr-codebase\\junit\\main",
-        "collections-practice\\gcr-codebase\\junit\\test",
-        "collections-practice\\gcr-codebase\\junit",
-        "collections-practice\\scenario-based\\Junit-Test-Case\\main",
-        "collections-practice\\scenario-based\\Junit-Test-Case\\test"
-    ],
-    "java.project.referencedLibraries": [
-        "c:\\Users\\Dell\\Downloads\\junit-platform-console-standalone-1.10.0.jar"
-    ]
 }
