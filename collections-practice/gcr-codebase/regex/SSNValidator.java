@@ -1,0 +1,15 @@
+import java.util.*;
+import java.util.regex.*;
+public class SSNValidator{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        Pattern p=Pattern.compile("\\b\\d{3}-\\d{2}-\\d{4}\\b");
+        Matcher m=p.matcher(s);
+        if(m.find()){
+            System.out.println("Valid");
+        }else{
+            System.out.println("Invalid");
+        }
+    }
+}
