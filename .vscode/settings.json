@@ -18,13 +18,5 @@
         "c:\\Users\\Dell\\Downloads\\guava-31.1-jre.jar",
         "c:\\Users\\Dell\\Downloads\\json-schema-core-1.2.8.jar",
         "c:\\Users\\Dell\\Downloads\\reflections-0.9.10.jar"
-        "collections-practice\\gcr-codebase\\junit\\main",
-        "collections-practice\\gcr-codebase\\junit\\test",
-        "collections-practice\\gcr-codebase\\junit",
-        "collections-practice\\scenario-based\\Junit-Test-Case\\main",
-        "collections-practice\\scenario-based\\Junit-Test-Case\\test"
-    ],
-    "java.project.referencedLibraries": [
-        "c:\\Users\\Dell\\Downloads\\junit-platform-console-standalone-1.10.0.jar"
     ]
 }
